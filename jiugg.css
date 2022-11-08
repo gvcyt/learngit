@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 1.用px写出来的，不能自适应
+
+.father {
+    width: 630px;
+    margin: 20px;
+}
+
+.father div:nth-child(n) {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 15px 15px 0;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.father div:nth-child(3n) {
+    margin: 0;
+} */
+
+
+/* -------------------------------------------------------------
+2.百分比布局 用padding代替盒子高度 */
+
+
+/* .father {
+    margin: 20px;
+}
+
+.father div:nth-child(n) {
+    float: left;
+    width: 32%;
+    padding-top: 32%;
+    margin: 0 2% 2% 0;
+    background-color: yellow;
+    border-radius: 10%;
+}
+
+.father div:nth-child(3n) {
+    margin: 0;
+} */
+
+
+/* ---------------------------------------------------------------------------- 
+3.用flex布局*/
+
+div {
+    box-sizing: border-box;
+}
+
+.father {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.father div:nth-child(n) {
+    flex: 32%;
+    padding-top: 32%;
+    margin: 0 2% 2% 0;
+    background-color: yellow;
+    border-radius: 20%;
+}
+
+.father div:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* ----------------------------------------------------
+4.rem大概布局 不太合适--媒体查询原稿图思想*/
+
+
+/* .father {
+    margin: .1317rem;
+}
+
+.father div:nth-child(n) {
+    float: left;
+    width: 3.05rem;
+    padding-top: 3.05rem;
+    margin: 0 .1947rem .1947rem 0;
+    background-color: yellow;
+    border-radius: 10%;
+}
+
+.father div:nth-child(3n) {
+    margin-right: 0;
+} */
